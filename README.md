@@ -1,4 +1,4 @@
-
+[![Build Status](https://dev.azure.com/cloudtraq/cloudtraq/_apis/build/status/JohnSimerlink.pipelines-dotnet-core-docker?branchName=master)](https://dev.azure.com/cloudtraq/cloudtraq/_build/latest?definitionId=2&branchName=master)
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
