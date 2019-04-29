@@ -10,17 +10,9 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
 - script: |
   docker build -t $(registryName).azurecr.io/$(imageName) .
   docker login -u $(dockerId) -p $(dockerPassword) $(registryName).azurecr.io
   docker push $(dockerId).azurecr.io/$(imageName)
-- script: docker login -u $(dockerId) -p $(dockerPassword) $(dockerId).azurecr.io
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
 
 
